@@ -17,5 +17,13 @@ to start sails server
 
 # Install Mongo DB
 download mongodb service here https://www.mongodb.com/download-center#atlas
-and start it with
+and start mongodb services.
+
+# Install Angular
+Finally install angular globaly using 
+npm install -g @angular/cli 
+command and browse to Angular_hero_app and run cli command 
+ng serve or ng serve --open
+
+your app will then start on http://localhost:4200/ 
 
