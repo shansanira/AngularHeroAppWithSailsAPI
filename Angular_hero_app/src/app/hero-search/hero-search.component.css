@@ -53,6 +53,13 @@
     background-size: 100%;
     color: #888;
 }
+.search-results ul li{
+    text-decoration: none;
+    font-size: 16px;
+    color: #888;
+    line-height: 30px;
+    color: rgb(245, 137, 137);
+}
 /* .search-box button{
     display: flex;
     align-items: center;

@@ -28,8 +28,8 @@ export class HeroDetailComponent implements OnInit {
   }
 
   getHero(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.heroService.getHero(id).subscribe(hero => this.hero = hero);
+    const hero_no = +this.route.snapshot.paramMap.get('hero_no');
+    this.heroService.getHero(hero_no).subscribe(hero => this.hero = hero);
   }
 
   goBack(): void {
@@ -46,8 +46,7 @@ export class HeroDetailComponent implements OnInit {
     // Called every time that the input properties of a component or a directive are checked.
     // Use it to extend change detection by performing a custom check.
     // Add 'implements DoCheck' to the class.
-    console.log(this.hero);
-
+    // console.log(this.hero);
   }
 
 }

@@ -10,7 +10,7 @@
             <!-- <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
                                   <span class="badge">{{hero.id}}</span>{{hero.name}}
             </li> -->
-            <li *ngFor="let hero of heroes">
+            <li *ngFor="let hero of heroes" (click)="getHero(hero.hero_no)">
               <a routerLink="/detail/{{hero.hero_no}}">
                 <span class="badge">{{hero.hero_no}}</span>{{hero.name}}
               </a>
